@@ -4,6 +4,7 @@
   <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-scripts">Scripts</a>&nbsp;&nbsp;&nbsp;
+</p>
 
 ## 💻 About 
 
