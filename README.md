@@ -6,7 +6,9 @@
   <a href="#-scripts">Scripts</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-## 💻 About 
+<br>
+
+## 💻 About
 
 This is a minimal boilerplate for Node.JS projects, with ESLint and Prettier included. <br>
 
@@ -14,7 +16,7 @@ This is a minimal boilerplate for Node.JS projects, with ESLint and Prettier inc
 
 - Clone the project and access its folder:
 
-```bash 
+```bash
 $ git clone https://github.com/laporeon/nodeplate && cd nodeplate
 ```
 - Install the dependencies
