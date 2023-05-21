@@ -6,10 +6,6 @@
 - [Usage](#usage)
   - [Requirements](#requirements)
   - [Installing](#installing)
-    <br/>
-
-
-<br>
 
 ## Features
 
@@ -21,7 +17,7 @@
 
 ```js
 // Node native modules will be at the top of imports list if declared with "node:" prefix
-import express from 'node:fs';
+import fs from 'node:fs';
 
 // External modules
 import express from 'express';
@@ -29,16 +25,13 @@ import express from 'express';
 // Parent
 import parent from '../parent/index.js';
 
-
 // Sibling
 import sibling from './sibling/index.js';
 ```
 
-
 ## Usage
 
-
-### Requeriments
+### Requirements
 
 - [Node.js](https://nodejs.org/en) >= v18.0.0
 
@@ -55,7 +48,4 @@ NPM:
 ```bash
 $ npm install
 ```
-
-
-[⬆ Back to the top](#--nodeplate)
 
