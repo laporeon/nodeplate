@@ -1,44 +1,61 @@
-<h1 align="center"> 🚀 Nodeplate</h1>
+<h1 align="center">Nodeplate</h1>
 
-<p align="center">
-  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-scripts">Scripts</a>&nbsp;&nbsp;&nbsp;
-</p>
+> A minimal boilerplate for building Node.JS applications.
+
+- [Features](#features)
+- [Usage](#usage)
+  - [Requirements](#requirements)
+  - [Installing](#installing)
+    <br/>
+
 
 <br>
 
-## 💻 About
+## Features
 
-This is a minimal boilerplate for Node.JS projects, with ESLint and Prettier included. <br>
+- nvm configuration file to help manage required Node.js version.
+- ESLint plugins configured for code linting.
+- Prettier plugins configured for code formatting.
+- A couple of preconfigured scripts to start app, lint and format code.
+- eslint-plugin-import-helpers to better organize imports. Order will be the following sequence:
 
-## 🚀 Usage
+```js
+// Node native modules will be at the top of imports list if declared with "node:" prefix
+import express from 'node:fs';
 
-- Clone the project and access its folder:
+// External modules
+import express from 'express';
+
+// Parent
+import parent from '../parent/index.js';
+
+
+// Sibling
+import sibling from './sibling/index.js';
+```
+
+
+## Usage
+
+
+### Requeriments
+
+- [Node.js](https://nodejs.org/en) >= v18.0.0
+
+### Installing:
+
+Yarn:
 
 ```bash
-$ git clone https://github.com/laporeon/nodeplate && cd nodeplate
-```
-- Install the dependencies
-```bash
-$ npm i
+$ yarn install
 ```
 
-## 🛠 Scripts
+NPM:
 
 ```bash
-# Start project
-npm start
-
-# Check for lint errors in all files
-npm run lint
-
-# Fix lint errors
-npm run lint:fix
-
-# Run prettier and format all files
-npm run format
+$ npm install
 ```
+
 
 [⬆ Back to the top](#--nodeplate)
 
