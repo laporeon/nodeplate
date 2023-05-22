@@ -13,7 +13,8 @@
 - ESLint plugins configured for code linting.
 - Prettier plugins configured for code formatting.
 - A couple of preconfigured scripts to start app, lint and format code.
-- eslint-plugin-import-helpers to better organize imports. Order will be the following sequence:
+- Husky and commitlint to ensure your commits are correctly formatted
+- eslint-plugin-import-helpers to better organize imports. Order will be the following sequence:- eslint-plugin-import-helpers to better organize imports. Order will be the following sequence:
 
 ```js
 // Node native modules will be at the top of imports list if declared with "node:" prefix
