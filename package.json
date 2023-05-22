@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node --watch ./src/server.js",
-    "lint": "eslint src --ext .js",
-    "lint:fix": "eslint --fix src/**",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --fix --ext .js",
     "format": "prettier --config .prettierrc --write src/**",
     "prepare": "husky install"
   },
