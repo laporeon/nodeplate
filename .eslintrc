@@ -25,8 +25,11 @@
         "groups": [
           "/^node:/",
           "module",
-          "parent",
-          "sibling"
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
         ],
         "alphabetize": {
           "order": "asc",
