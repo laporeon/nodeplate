@@ -1,41 +1,40 @@
-<h1 align="center">Nodeplate</h1>
+<h1 align="center">TSNodeplate</h1>
 
-> A minimal boilerplate for building Node.JS applications.
+> A minimal boilerplate to build Node.JS projects with Typescript.
 
 - [Features](#features)
-- [Usage](#usage)
-  - [Requirements](#requirements)
-  - [Installing](#installing)
+- [Requirements](#requirements)
+- [Installing](#installing)
 
 ## Features
 
-- nvm configuration file to help manage required Node.js version.
+- `.nvmrc` for Node.js version management.
 - ESLint plugins configured for code linting.
-- Prettier plugins configured for code formatting.
-- A couple of preconfigured scripts to start app, lint and format code.
-- Husky and commitlint to ensure your commits are correctly formatted
-- eslint-plugin-import-helpers to better organize imports. Order will be the following sequence:
+- Prettier integration for consistent formatting.
+- Preconfigured npm scripts for development workflows.
+- Enforced conventional commit standards using Husky + commitlint.
+- Import sorting is configured and automatically applied in this order:
 
 ```js
-// Node native modules will be at the top of imports list
-// if declared with "node:" prefix
-import fs from 'node:fs';
+import 'dotenv/config'; //  Side-effect imports
 
-// External modules
-import express from 'express';
+import fs from 'node:fs'; // Node.js built-ins if declared if "node:" prefix
 
-// Parent, Sibling
-import parent from '../parent/index.js';
-import sibling from './sibling/index.js';
+import express from 'express'; // External packages
+
+import { env } from '@/config/env'; // Internal aliases
+
+import parent from '../parent/index.js'; // Parent
+import sibling from './sibling/index.js'; // Sibling
 ```
 
-## Usage
+You can customize the order by modifying the **groups** array in the ESLint configuration file, see [lines 27-34](./eslint.config.mjs#L27-34).
 
-### Requirements
+## Requirements
 
-- [Node.js](https://nodejs.org/en) >= v18.0.0
+- [Node.js](https://nodejs.org/en) v.22 or higher
 
-### Installing:
+## Installing:
 
 Yarn:
 
@@ -48,4 +47,3 @@ NPM:
 ```bash
 $ npm install
 ```
-
